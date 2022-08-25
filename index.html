@@ -498,85 +498,93 @@
     </main>
 
     <!-- хххххххххххххххххххххххххх Підвал хххххххххххххххххххххххххх -->
-    <footer class="footer">
-      <div class="container">
-        <div class="first-footer-container">
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <div class="page-footer__address">
           <!-- хххххххххххххххххххххххххх Логотип -->
-          <a href="./index.html" class="logo">
-            <span class="logo-web">Web</span><span class="logo-white">Studio</span>
+          <a href="./index.html" class="logo page-footer__logo">
+            Web<span class="logo--white-part">Studio</span>
           </a>
           <address>
-            <ul class="address-list">
+            <ul class="address__list">
               <!-- хххххххххххххххххххххххххх Розташування -->
-              <li>
+              <li class="address__item">
                 <a
                   href="https://www.google.com.ua/maps/search/м.+київ+пр-т+лесі+українки+26/@50.4266707,30.5363676,17z/data=!3m1!4b1?hl=uk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="location footer-contact"
+                  class="address__location address__link"
                 >
                   м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
               <!-- хххххххххххххххххххххххххх Контакти -->
-              <li><a href="mailto:info@example.com" class="footer-contact">info@example.com</a></li>
-              <li><a href="tel:+380991111111" class="footer-contact">+38 099 111 11 11</a></li>
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__link address__contact"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a href="tel:+380961111111" class="address__link address__contact"
+                  >+38 096 111 11 11</a
+                >
+              </li>
             </ul>
           </address>
         </div>
 
         <!-- хххххххххххххххххххххххххх Приєднуйтесь -->
-        <div class="second-footer-container">
-          <h2 class="footer-networks-title">приєднуйтесь</h2>
-          <ul class="footer-networks-list">
+        <div class="page-footer__join">
+          <h2 class="join__heading">приєднуйтесь</h2>
+          <ul class="join-list">
             <!-- _______________instagram -->
-            <li class="footer-network-item">
+            <li class="join__item">
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="footer-link"
+                class="join__link"
               >
-                <svg class="footer-soc-icon">
+                <svg class="join__icon">
                   <use href="./images/icons.svg#instagram" width="20px" height="20px"></use>
                 </svg>
               </a>
             </li>
             <!-- _______________twitter -->
-            <li class="footer-network-item">
+            <li class="join__item">
               <a
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="footer-link"
+                class="join__link"
               >
-                <svg class="footer-soc-icon">
+                <svg class="join__icon">
                   <use href="./images/icons.svg#twitter" width="20px" height="20px"></use>
                 </svg>
               </a>
             </li>
             <!-- _______________facebook -->
-            <li class="footer-network-item">
+            <li class="join__item">
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="footer-link"
+                class="join__link"
               >
-                <svg class="footer-soc-icon">
+                <svg class="join__icon">
                   <use href="./images/icons.svg#facebook" width="20px" height="20px"></use>
                 </svg>
               </a>
             </li>
             <!-- _______________linkedin -->
-            <li class="footer-network-item">
+            <li class="join__item">
               <a
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="footer-link"
+                class="join__link"
               >
-                <svg class="footer-soc-icon">
+                <svg class="join__icon">
                   <use href="./images/icons.svg#linkedin" width="20px" height="20px"></use>
                 </svg>
               </a>
@@ -585,21 +593,21 @@
         </div>
 
         <!--  Підпишіться на розсилку  -->
-        <div class="third-footer-container">
-          <h2 class="subscribe-title">Підпишіться на розсилку</h2>
+        <div class="page-footer__subscribe">
+          <h2 class="subscribe__heading">Підпишіться на розсилку</h2>
 
-          <form class="subscribe-form">
+          <form class="subscribe__form">
             <label for="subscribe-email"></label>
             <input
               type="email"
               name="email"
               id="subscribe-email"
               placeholder="E-mail"
-              class="subscribe-field"
+              class="subscribe__field"
             />
-            <button type="submit" class="subscribe-button">
+            <button type="submit" class="subscribe__button">
               <span>Підписатися</span>
-              <svg class="send-icon">
+              <svg class="subscribe__icon">
                 <use href="./images/icons.svg#send"></use>
               </svg>
             </button>
