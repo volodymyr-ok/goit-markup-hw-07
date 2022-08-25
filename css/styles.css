@@ -458,12 +458,12 @@ img {
   gap: 10px;
 }
 
-.team__soc-network {
+/* .team__soc-network {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: teal; */
-}
+  background-color: teal;
+} */
 
 .team__soc-link {
   display: flex;
@@ -504,7 +504,7 @@ img {
 
 /* ---------- Клієнти Clients */
 
-.clients-heading {
+.clients__heading {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -516,13 +516,13 @@ img {
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.client-link {
+.clients__link {
   width: 170px;
   height: 92px;
   display: flex;
@@ -536,7 +536,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-logo {
+.clients__logo {
   width: 160px;
   height: 60px;
 
@@ -547,13 +547,13 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-link:hover,
-.client-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border: var(--blue-accent) 1px solid;
 }
 
-.client-link:hover .client-logo,
-.client-link:focus .client-logo {
+.clients__link:hover .client-logo,
+.clients__link:focus .client-logo {
   fill: var(--blue-accent);
 }
 
