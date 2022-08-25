@@ -1101,6 +1101,7 @@ img {
 
 .checkbox__tick.visually-hidden {
   transform: translate(9px, 20px);
+  outline: none;
 }
 
 .checkbox__frame {
