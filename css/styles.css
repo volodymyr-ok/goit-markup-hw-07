@@ -330,15 +330,15 @@ img {
 
 /* __________Чим ми займаємося */
 
-.doing.section {
+.specialization {
   padding-top: 0;
 }
 
-.doing .container {
+.specialization__container {
   flex-direction: column;
 }
 
-.doing-title {
+.specialization__heading {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -350,24 +350,19 @@ img {
   margin: 0;
 }
 
-.doing-list {
-  margin-top: 50px;
+.specialization__list {
   display: flex;
+  gap: 30px;
+  margin-top: 50px;
 }
 
-.doing-item {
+.specialization__item {
+  position: relative;
+
   padding: 0;
 }
 
-.doing-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.doing-item {
-  position: relative;
-}
-
-.doing-thumb {
+.specialization__overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -382,7 +377,7 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.doing-descr {
+.specialization__label {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
