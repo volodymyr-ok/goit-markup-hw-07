@@ -2,10 +2,11 @@
 :root {
   --main-color: #212121;
   --minor-color: #757575;
-  --logo-white: #ffffff;
   --blue-accent: #2196f3;
-  --hover-text-accent: #ffffff;
   --bg-accent: #f5f4fa;
+
+  --logo-white: #ffffff;
+  --hover-text-accent: #ffffff;
   --portfolio-borders-color: #eeeeee;
   --secondary-bg: #2f303a;
   /* ----- */
@@ -220,11 +221,11 @@ img {
   fill: var(--blue-accent);
 }
 
-/* ----------Головний контент студії---------- */
+/* ---------- Головний контент студії ---------- */
 
-/* Герой Hero */
+/* ---------- Герой Hero */
 
-.hero-section {
+.hero {
   margin-right: auto;
   margin-left: auto;
   max-width: 1600px;
@@ -241,7 +242,7 @@ img {
   background-position: right 50% bottom 50%;
 }
 
-.hero-section__heading {
+.hero__heading {
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -255,7 +256,7 @@ img {
   text-transform: uppercase;
 }
 
-.hero-section__button {
+.hero__button {
   padding: 10px 32px;
   border: none;
 
@@ -276,26 +277,24 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-section__button:focus,
-.hero-section__button:hover {
-  background-color: var(--bg-accent);
+.hero__button:focus,
+.hero__button:hover {
+  background-color: #f5f4fa;
   color: inherit;
 }
 
-/* __________Особливості*/
+/* ---------- Особливості Features */
 
-.features {
+.features__list {
   display: flex;
   justify-content: space-between;
 }
 
-.feature:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
 
-/* ---------------------Іконки фічей------- */
-
-.feature-icon-bg {
+.features__image-wrap {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -305,7 +304,7 @@ img {
   background-color: #f5f4fa;
 }
 
-.feature-title {
+.features__label {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -317,7 +316,7 @@ img {
   padding: 0;
 }
 
-.feature-descr {
+.features__descr {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
