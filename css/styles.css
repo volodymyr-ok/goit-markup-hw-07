@@ -733,12 +733,14 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.second-footer-container {
+/* Приєднуйтесь */
+
+.page-footer__join {
   margin-top: 12px;
   margin-left: 70px;
 }
 
-.footer-networks-title {
+.join__heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -749,14 +751,12 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-networks-list {
+.join-list {
   display: flex;
   gap: 10px;
 }
 
-/* ------------------------Іконки футера */
-
-.footer-link {
+.join__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -770,15 +770,15 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-soc-icon {
+.join__link:hover,
+.join__link:focus {
+  background-color: var(--blue-accent);
+}
+
+.join__icon {
   width: 20px;
   height: 20px;
   fill: #ffffff;
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  background-color: var(--blue-accent);
 }
 
 /* ---------- Підпишіться на розсилку ---------- */
