@@ -686,12 +686,16 @@ img {
   display: flex;
 }
 
-.address__wrap {
+.page-footer__address {
   display: flex;
   flex-direction: column;
+
+  max-width: 231px;
+  width: 100%;
 }
 
 .page-footer__logo {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -704,9 +708,6 @@ img {
 }
 
 .address__link {
-  display: flex;
-  align-items: center;
-
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
