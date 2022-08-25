@@ -783,14 +783,14 @@ img {
 
 /* ---------- Підпишіться на розсилку ---------- */
 
-.third-footer-container {
+.page-footer__subscribe {
   margin-left: 93px;
   margin-top: 12px;
 
   width: 100%;
 }
 
-.subscribe-title {
+.subscribe__heading {
   margin-bottom: 20px;
 
   font-size: 14px;
@@ -800,12 +800,12 @@ img {
   color: #ffffff;
 }
 
-.subscribe-form {
+.subscribe__form {
   display: flex;
   justify-content: space-between;
 }
 
-.subscribe-field {
+.subscribe__field {
   margin-right: 12px;
   padding: 15px 16px;
   width: 358px;
@@ -824,12 +824,12 @@ img {
   transition-timing-function: var(--transition);
 }
 
-.subscribe-field:focus {
+.subscribe__field:focus {
   outline: transparent;
   border: 1px solid var(--blue-accent);
 }
 
-.subscribe-button {
+.subscribe__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -852,17 +852,17 @@ img {
   transition-timing-function: var(--transition);
 }
 
-.subscribe-button:hover,
-.subscribe-button:focus {
+.subscribe__button:hover,
+.subscribe__button:focus {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.subscribe-button:focus {
+.subscribe__button:focus {
   outline: transparent;
   border: 1px solid var(--blue-accent);
 }
 
-.send-icon {
+.subscribe__icon {
   margin-left: 10px;
   width: 24px;
   height: 24px;
@@ -875,11 +875,11 @@ img {
   transition-timing-function: var(--transition);
 }
 
-.subscribe-button:hover .send-icon {
+.subscribe__button:hover .subscribe__icon {
   fill: var(--blue-accent);
 }
 
-.subscribe-button:focus .send-icon {
+.subscribe__button:focus .subscribe__icon {
   fill: var(--blue-accent);
 
   animation-name: plane;
