@@ -222,9 +222,9 @@ img {
 
 /* ----------Головний контент студії---------- */
 
-/*__________Герой*/
+/* Герой Hero */
 
-.hero {
+.hero-section {
   margin-right: auto;
   margin-left: auto;
   max-width: 1600px;
@@ -241,7 +241,7 @@ img {
   background-position: right 50% bottom 50%;
 }
 
-.heading {
+.hero-section__heading {
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -255,7 +255,7 @@ img {
   text-transform: uppercase;
 }
 
-.hero-btn {
+.hero-section__button {
   padding: 10px 32px;
   border: none;
 
@@ -276,8 +276,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:focus,
-.hero-btn:hover {
+.hero-section__button:focus,
+.hero-section__button:hover {
   background-color: var(--bg-accent);
   color: inherit;
 }
