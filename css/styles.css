@@ -552,8 +552,8 @@ img {
   border: var(--blue-accent) 1px solid;
 }
 
-.clients__link:hover .client-logo,
-.clients__link:focus .client-logo {
+.clients__link:hover .clients__logo,
+.clients__link:focus .clients__logo {
   fill: var(--blue-accent);
 }
 
