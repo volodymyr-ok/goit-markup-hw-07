@@ -1,0 +1,40 @@
+.team__soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team__soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team__soc-link:hover,
+.team__soc-link:focus {
+  background-color: var(--blue-accent);
+}
+
+.team__soc-icon {
+  width: 20px;
+  height: 20px;
+
+  fill: #afb1b8;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team__soc-link:hover .team__soc-icon,
+.team__soc-link:focus .team__soc-icon {
+  fill: white;
+}
