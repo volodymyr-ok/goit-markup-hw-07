@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: var(--secondary-bg);
+  background-color: $secondary-bg;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -40,7 +40,7 @@
 
 .address__link:focus,
 .address__link:hover {
-  color: var(--blue-accent);
+  color: $blue-accent;
 }
 
 .address__location {
@@ -90,7 +90,7 @@
 
 .join__link:hover,
 .join__link:focus {
-  background-color: var(--blue-accent);
+  background-color: $blue-accent;
 }
 
 .join__icon {
@@ -139,12 +139,12 @@
 
   transition-property: border;
   transition-duration: 250ms;
-  transition-timing-function: var(--transition);
+  transition-timing-function: $transition;
 }
 
 .subscribe__field:focus {
   outline: transparent;
-  border: 1px solid var(--blue-accent);
+  border: 1px solid $blue-accent;
 }
 
 .subscribe__button {
@@ -161,13 +161,13 @@
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  background-color: var(--blue-accent);
+  background-color: $blue-accent;
   color: #ffffff;
 
   cursor: pointer;
   transition-property: background-color, border;
   transition-duration: 250ms;
-  transition-timing-function: var(--transition);
+  transition-timing-function: $transition;
 }
 
 .subscribe__button:hover,
@@ -177,7 +177,7 @@
 
 .subscribe__button:focus {
   outline: transparent;
-  border: 1px solid var(--blue-accent);
+  border: 1px solid $blue-accent;
 }
 
 .subscribe__icon {
@@ -190,15 +190,15 @@
   transform-origin: center;
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: var(--transition);
+  transition-timing-function: $transition;
 }
 
 .subscribe__button:hover .subscribe__icon {
-  fill: var(--blue-accent);
+  fill: $blue-accent;
 }
 
 .subscribe__button:focus .subscribe__icon {
-  fill: var(--blue-accent);
+  fill: $blue-accent;
 
   animation-name: plane;
   animation-duration: 1750ms;

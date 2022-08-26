@@ -15,7 +15,7 @@
   background-color: #ffffff;
   border-radius: 4px;
 
-  transition: transform var(--transition);
+  transition: transform $transition;
 }
 
 .modal__close-button {
@@ -40,7 +40,7 @@
 
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: var(--transition);
+  transition-timing-function: $transition;
 }
 
 .modal__close-button:hover,
@@ -56,12 +56,12 @@
 
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: var(--transition);
+  transition-timing-function: $transition;
 }
 
 .modal__close-button:hover .modal__close-icon,
 .modal__close-button:focus .modal__close-icon {
-  fill: var(--blue-accent);
+  fill: $blue-accent;
 }
 
 .modal__heading {
@@ -92,7 +92,7 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: var(--minor-color);
+  color: $minor-color;
 }
 
 .modal__input {
@@ -107,12 +107,12 @@
 
   transition-property: border;
   transition-duration: 250ms;
-  transition-timing-function: var(--transition);
+  transition-timing-function: $transition;
 }
 
 .modal__field:focus {
   outline: transparent;
-  border: 1px solid var(--blue-accent);
+  border: 1px solid $blue-accent;
 }
 
 .modal__input-icon {
@@ -126,11 +126,11 @@
 
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: var(--transition);
+  transition-timing-function: $transition;
 }
 
 .modal__field:focus + .modal__input-icon {
-  fill: var(--blue-accent);
+  fill: $blue-accent;
 }
 
 /* Коментар Comment */
@@ -154,7 +154,7 @@
 
   transition-property: border;
   transition-duration: 250ms;
-  transition-timing-function: var(--transition);
+  transition-timing-function: $transition;
 }
 
 .modal__comment::placeholder {
@@ -163,7 +163,7 @@
 
 .modal__comment:focus {
   outline: transparent;
-  border: 1px solid var(--blue-accent);
+  border: 1px solid $blue-accent;
 }
 
 /* Чекбокс Checkbox */
@@ -176,7 +176,7 @@
 }
 
 .checkbox__label {
-  color: var(--minor-color);
+  color: $minor-color;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -203,8 +203,8 @@
 }
 
 .checkbox__tick:checked + .checkbox__frame {
-  border-color: var(--blue-accent);
-  background-color: var(--blue-accent);
+  border-color: $blue-accent;
+  background-color: $blue-accent;
 }
 
 .checkbox__icon {
@@ -222,7 +222,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--blue-accent);
+  color: $blue-accent;
 }
 
 /* Submit button Кнопка підтвердження btn */
@@ -239,7 +239,7 @@
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
-  background-color: var(--blue-accent);
+  background-color: $blue-accent;
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 

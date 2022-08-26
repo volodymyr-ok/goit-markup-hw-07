@@ -31,10 +31,10 @@
 
 .clients__link:hover,
 .clients__link:focus {
-  border: var(--blue-accent) 1px solid;
+  border: $blue-accent 1px solid;
 }
 
 .clients__link:hover .clients__logo,
 .clients__link:focus .clients__logo {
-  fill: var(--blue-accent);
+  fill: $blue-accent;
 }

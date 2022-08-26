@@ -32,7 +32,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--main-color);
+  color: $main-color;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -41,11 +41,11 @@
 
 .nav__link:hover,
 .nav__link:focus {
-  color: var(--blue-accent);
+  color: $blue-accent;
 }
 
 .nav__link--current {
-  color: var(--blue-accent);
+  color: $blue-accent;
 }
 
 .nav__link--current::after {
@@ -59,7 +59,7 @@
   width: 100%;
   height: 4px;
 
-  background-color: var(--blue-accent);
+  background-color: $blue-accent;
 }
 
 .communication {
@@ -74,7 +74,7 @@
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  color: var(--minor-color);
+  color: $minor-color;
   display: flex;
   align-items: center;
 
@@ -85,14 +85,14 @@
 
 .communication__contact:hover,
 .communication__contact:focus {
-  color: var(--blue-accent);
+  color: $blue-accent;
 }
 
 .communication__icon {
   display: inline-block;
   margin-right: 10px;
 
-  fill: var(--minor-color);
+  fill: $minor-color;
 
   transition-property: fill;
   transition-duration: 250ms;
@@ -101,5 +101,5 @@
 
 .communication__contact:hover .communication__icon,
 .communication__contact:focus .communication__icon {
-  fill: var(--blue-accent);
+  fill: $blue-accent;
 }
