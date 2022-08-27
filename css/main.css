@@ -712,8 +712,7 @@ img {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal__close-button {
+.modal__close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -722,7 +721,6 @@ img {
   align-items: center;
   width: 30px;
   height: 30px;
-  /* background-color: teal; */
   border-width: 1px;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.1);
@@ -733,13 +731,10 @@ img {
   transition-duration: 250ms;
   transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal__close-button:hover,
-.modal__close-button:focus {
+.modal__close:hover, .modal__close:focus {
   background-color: #ffffff;
 }
-
-.modal__close-icon {
+.modal__icon {
   width: 18px;
   height: 18px;
   fill: #000000;
@@ -747,12 +742,9 @@ img {
   transition-duration: 250ms;
   transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal__close-button:hover .modal__close-icon,
-.modal__close-button:focus .modal__close-icon {
+.modal__close:hover .modal__icon, .modal__close:focus .modal__icon {
   fill: #2196f3;
 }
-
 .modal__heading {
   margin-bottom: 12px;
   font-size: 20px;
@@ -760,18 +752,27 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.modal__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 52px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
-/* ---------------- Форми модалки ---------------- */
-.form__wrap {
+/* ===================== Форми модалки ===================== */
+.form {
   position: relative;
   display: flex;
   flex-direction: column;
+  /* Коментар Comment */
 }
-
-.form__wrap:not(:last-child) {
+.form:not(:last-child) {
   margin-bottom: 10px;
 }
-
 .form__lable {
   margin-bottom: 4px;
   font-weight: 400;
@@ -780,12 +781,10 @@ img {
   letter-spacing: 0.01em;
   color: #757575;
 }
-
-.modal__input {
+.form__field {
   position: relative;
 }
-
-.modal__field {
+.form__input {
   padding: 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -794,13 +793,11 @@ img {
   transition-duration: 250ms;
   transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal__field:focus {
+.form__input:focus {
   outline: transparent;
   border: 1px solid #2196f3;
 }
-
-.modal__input-icon {
+.form__icon {
   position: absolute;
   bottom: 50%;
   left: 12px;
@@ -811,17 +808,13 @@ img {
   transition-duration: 250ms;
   transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal__field:focus + .modal__input-icon {
+.form__input:focus + .form__icon {
   fill: #2196f3;
 }
-
-/* Коментар Comment */
-.form__wrap:nth-child(4) {
+.form:nth-child(4) {
   margin-bottom: 20px;
 }
-
-.modal__comment {
+.form__comment {
   height: 120px;
   padding: 12px 16px;
   resize: none;
@@ -836,23 +829,20 @@ img {
   transition-duration: 250ms;
   transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal__comment::placeholder {
+.form__comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
-.modal__comment:focus {
+.form__comment:focus {
   outline: transparent;
   border: 1px solid #2196f3;
 }
 
-/* Чекбокс Checkbox */
-.checkbox__wrap {
+/* ===================== Чекбокс Checkbox ===================== */
+.checkbox {
   text-align: center;
   margin-bottom: 30px;
   user-select: none;
 }
-
 .checkbox__label {
   color: #757575;
   font-weight: 400;
@@ -860,12 +850,10 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
-.checkbox__tick.visually-hidden {
+.checkbox__origin.visually-hidden {
   transform: translate(9px, 20px);
   outline: none;
 }
-
 .checkbox__frame {
   display: inline-flex;
   justify-content: center;
@@ -877,38 +865,22 @@ img {
   border: 2px solid #000000;
   background-color: transparent;
 }
-
-.checkbox__tick:checked + .checkbox__frame {
+.checkbox__origin:checked + .checkbox__frame {
   border-color: #2196f3;
   background-color: #2196f3;
 }
-
 .checkbox__icon {
   fill: transparent;
   width: 100%;
   height: 100%;
 }
-
-.checkbox__tick:checked + .checkbox__frame svg {
+.checkbox__origin:checked + .checkbox__frame svg {
   fill: #ffffff;
 }
-
 .checkbox__policy {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #2196f3;
-}
-
-/* Submit button Кнопка підтвердження */
-.modal__button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 52px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }/*# sourceMappingURL=main.css.map */
