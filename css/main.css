@@ -258,7 +258,6 @@ img {
   background-repeat: no-repeat;
   background-position: right 50% bottom 50%;
 }
-
 .hero__heading {
   margin-bottom: 30px;
   color: #ffffff;
@@ -270,7 +269,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
 .hero__button {
   padding: 10px 32px;
   font-weight: 700;
@@ -281,9 +279,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.hero__button:focus,
-.hero__button:hover {
+.hero__button:focus, .hero__button:hover {
   background-color: #f5f4fa;
   color: inherit;
 }
