@@ -2,8 +2,11 @@
 @import './base/base';
 @import './base/container';
 @import './utiles/visually-hidden';
-@import './layouts/header';
+
 @import './components/logo';
+@import './layouts/header';
+
+@import './components/button';
 @import './layouts/hero';
 @import './layouts/features';
 @import './layouts/specialization';

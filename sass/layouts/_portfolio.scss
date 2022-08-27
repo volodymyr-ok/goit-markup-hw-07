@@ -1,54 +1,48 @@
-.portfolio {
+.portfolio__container {
   display: flex;
   flex-direction: column;
 }
 
 /* __________ Фільтр */
 
-.portfolio__filter {
+.filter {
   display: flex;
   justify-content: center;
   gap: 8px;
 }
 
-.portfolio__button {
+.filter__button {
   padding: 6px 22px;
 
-  font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   color: $main-color;
-  background-color: $bg-accent;
-  border: none;
-  border-radius: 4px;
+  background-color: $grey-accent;
 
-  cursor: pointer;
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__button:hover,
-.portfolio__button:focus {
+.filter__button:hover,
+.filter__button:focus {
   background-color: $blue-accent;
-  color: $hover-text-accent;
+  color: $white-accent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* __________ Портфоліо */
 
-.portfolio__list {
+.portfolio {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.portfolio__item {
+.portfolio__card {
   flex-basis: calc((100% - 68px) / 3);
 
   transition-property: box-shadow;
@@ -56,7 +50,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__item:hover {
+.portfolio__card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -82,7 +76,7 @@
   line-height: calc(28 / 18);
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: $white-accent;
   background-color: rgba(33, 150, 243, 0.9);
 
   transition-property: transform;
@@ -90,7 +84,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__item:hover .portfolio__descr {
+.portfolio__card:hover .portfolio__descr {
   transform: translateY(0%);
 }
 

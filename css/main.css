@@ -74,6 +74,23 @@ img {
   margin: -1px;
 }
 
+.logo {
+  margin-right: 93px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.logo--black-part {
+  color: #000000;
+}
+.logo--white-part {
+  color: #ffffff;
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -171,21 +188,14 @@ img {
   fill: #2196f3;
 }
 
-.logo {
-  margin-right: 93px;
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-}
-.logo--black-part {
-  color: #000000;
-}
-.logo--white-part {
+.button {
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: #2196f3;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .hero {
@@ -204,7 +214,6 @@ img {
 }
 
 .hero__heading {
-  margin-top: 0;
   margin-bottom: 30px;
   color: #ffffff;
   font-style: normal;
@@ -218,18 +227,10 @@ img {
 
 .hero__button {
   padding: 10px 32px;
-  border: none;
-  border-radius: 4px;
-  font-family: inherit;
   font-weight: 700;
-  font-size: 16px;
   line-height: 30px;
-  text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: #2196f3;
-  color: #ffffff;
-  cursor: pointer;
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -456,59 +457,53 @@ img {
   fill: #2196f3;
 }
 
-.portfolio {
+.portfolio__container {
   display: flex;
   flex-direction: column;
 }
 
 /* __________ Фільтр */
-.portfolio__filter {
+.filter {
   display: flex;
   justify-content: center;
   gap: 8px;
 }
 
-.portfolio__button {
+.filter__button {
   padding: 6px 22px;
-  font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   background-color: #f5f4fa;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__button:hover,
-.portfolio__button:focus {
+.filter__button:hover,
+.filter__button:focus {
   background-color: #2196f3;
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* __________ Портфоліо */
-.portfolio__list {
+.portfolio {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.portfolio__item {
+.portfolio__card {
   flex-basis: calc((100% - 68px) / 3);
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__item:hover {
+.portfolio__card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -536,7 +531,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__item:hover .portfolio__descr {
+.portfolio__card:hover .portfolio__descr {
   transform: translateY(0%);
 }
 
@@ -560,24 +555,24 @@ img {
   letter-spacing: 0.03em;
 }
 
-.page-footer {
+.footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.page-footer__container {
+.footer__container {
   display: flex;
 }
 
-.page-footer__address {
+.address {
   display: flex;
   flex-direction: column;
   max-width: 231px;
   width: 100%;
 }
 
-.page-footer__logo {
+.footer__logo {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -612,7 +607,7 @@ img {
 }
 
 /* Приєднуйтесь */
-.page-footer__join {
+.join {
   margin-top: 12px;
   margin-left: 70px;
 }
@@ -657,7 +652,7 @@ img {
 }
 
 /* ---------- Підпишіться на розсилку ---------- */
-.page-footer__subscribe {
+.subscribe {
   margin-left: 93px;
   margin-top: 12px;
   width: 100%;
@@ -704,15 +699,9 @@ img {
   align-items: center;
   width: 200px;
   padding: 10px 28px;
-  border-radius: 4px;
-  border: none;
   font-weight: 700;
-  font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  background-color: #2196f3;
-  color: #ffffff;
-  cursor: pointer;
   transition-property: background-color, border;
   transition-duration: 250ms;
   transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -978,19 +967,13 @@ img {
 }
 
 /* Submit button Кнопка підтвердження btn */
-.modal__submit-button {
+.modal__button {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 52px;
-  border-radius: 4px;
-  border: none;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.87;
   letter-spacing: 0.06em;
-  background-color: #2196f3;
-  color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

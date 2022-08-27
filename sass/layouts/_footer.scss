@@ -1,14 +1,14 @@
-.page-footer {
-  background-color: $secondary-bg;
+.footer {
+  background-color: $dark-bg-color;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.page-footer__container {
+.footer__container {
   display: flex;
 }
 
-.page-footer__address {
+.address {
   display: flex;
   flex-direction: column;
 
@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-.page-footer__logo {
+.footer__logo {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -44,7 +44,7 @@
 }
 
 .address__location {
-  color: #ffffff;
+  color: $white-accent;
 }
 
 .address__contact {
@@ -53,7 +53,7 @@
 
 /* Приєднуйтесь */
 
-.page-footer__join {
+.join {
   margin-top: 12px;
   margin-left: 70px;
 }
@@ -66,7 +66,7 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white-accent;
 }
 
 .join-list {
@@ -96,12 +96,12 @@
 .join__icon {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill: $white-accent;
 }
 
 /* ---------- Підпишіться на розсилку ---------- */
 
-.page-footer__subscribe {
+.subscribe {
   margin-left: 93px;
   margin-top: 12px;
 
@@ -115,7 +115,7 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white-accent;
 }
 
 .subscribe__form {
@@ -154,17 +154,11 @@
 
   width: 200px;
   padding: 10px 28px;
-  border-radius: 4px;
-  border: none;
 
   font-weight: 700;
-  font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  background-color: $blue-accent;
-  color: #ffffff;
 
-  cursor: pointer;
   transition-property: background-color, border;
   transition-duration: 250ms;
   transition-timing-function: $transition;
@@ -185,7 +179,7 @@
   width: 24px;
   height: 24px;
 
-  fill: #ffffff;
+  fill: $white-accent;
 
   transform-origin: center;
   transition-property: fill;

@@ -1,5 +1,5 @@
 .team {
-  background-color: $bg-accent;
+  background-color: $grey-accent;
 }
 
 .team__container {
@@ -17,7 +17,7 @@
 }
 
 .team__member {
-  background-color: $hover-text-accent;
+  background-color: $white-accent;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
