@@ -1,10 +1,10 @@
-.team__soc-list {
+.soc-networks {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.team__soc-link {
+.soc-networks__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,12 +18,12 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team__soc-link:hover,
-.team__soc-link:focus {
+.soc-networks__link:hover,
+.soc-networks__link:focus {
   background-color: $blue-accent;
 }
 
-.team__soc-icon {
+.soc-networks__icon {
   width: 20px;
   height: 20px;
 
@@ -34,7 +34,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team__soc-link:hover .team__soc-icon,
-.team__soc-link:focus .team__soc-icon {
+.soc-networks__link:hover .soc-networks__icon,
+.soc-networks__link:focus .soc-networks__icon {
   fill: white;
 }

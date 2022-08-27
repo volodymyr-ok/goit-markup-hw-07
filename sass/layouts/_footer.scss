@@ -8,17 +8,17 @@
   display: flex;
 }
 
+.footer__logo {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .address {
   display: flex;
   flex-direction: column;
 
   max-width: 231px;
   width: 100%;
-}
-
-.footer__logo {
-  width: 100%;
-  margin-bottom: 20px;
 }
 
 .address__item:not(:last-child) {
@@ -69,33 +69,15 @@
   color: $white-accent;
 }
 
-.join-list {
-  display: flex;
-  gap: 10px;
-}
-
 .join__link {
-  display: flex;
-  width: 44px;
-  height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
 
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join__link:hover,
-.join__link:focus {
-  background-color: $blue-accent;
-}
-
 .join__icon {
-  width: 20px;
-  height: 20px;
   fill: $white-accent;
 }
 

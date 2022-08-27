@@ -4,16 +4,18 @@
 @import './utiles/visually-hidden';
 
 @import './components/logo';
-@import './layouts/header';
-
 @import './components/button';
+@import './components/soc-networks';
+
+@import './layouts/header';
 @import './layouts/hero';
 @import './layouts/features';
 @import './layouts/specialization';
 @import './layouts/team';
-@import './components/soc-links';
 @import './layouts/clients';
 @import './layouts/portfolio';
+
 @import './layouts/footer';
+
 @import './components/backdrop';
 @import './components/modal';
