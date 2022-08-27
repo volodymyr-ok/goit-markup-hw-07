@@ -147,11 +147,10 @@ img {
   fill: white;
 }
 
-.page-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
-
-.page-header__container {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -161,17 +160,14 @@ img {
   display: flex;
   align-items: center;
 }
-
-.nav {
+.navigation__list {
   display: flex;
   gap: 50px;
 }
-
-.nav__item {
+.navigation__item {
   position: relative;
 }
-
-.nav__link {
+.navigation__link {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -185,17 +181,13 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.nav__link:hover,
-.nav__link:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: #2196f3;
 }
-
-.nav__link--current {
+.navigation__link--current {
   color: #2196f3;
 }
-
-.nav__link--current::after {
+.navigation__link--current::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -210,7 +202,6 @@ img {
   display: flex;
   gap: 30px;
 }
-
 .communication__contact {
   font-weight: 500;
   font-size: 14px;
@@ -224,12 +215,9 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.communication__contact:hover,
-.communication__contact:focus {
+.communication__contact:hover, .communication__contact:focus {
   color: #2196f3;
 }
-
 .communication__icon {
   display: inline-block;
   margin-right: 10px;
@@ -238,9 +226,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.communication__contact:hover .communication__icon,
-.communication__contact:focus .communication__icon {
+.communication__contact:hover .communication__icon, .communication__contact:focus .communication__icon {
   fill: #2196f3;
 }
 
@@ -915,7 +901,7 @@ img {
   color: #2196f3;
 }
 
-/* Submit button Кнопка підтвердження btn */
+/* Submit button Кнопка підтвердження */
 .modal__button {
   display: block;
   margin-left: auto;
