@@ -1,53 +1,53 @@
 .header {
   border-bottom: 1px solid #ececec;
+}
 
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation {
   display: flex;
   align-items: center;
+}
 
-  &__list {
-    display: flex;
-    gap: 50px;
-  }
+.navigation__list {
+  display: flex;
+  gap: 50px;
+}
 
-  &__item {
-    position: relative;
-  }
+.navigation__item {
+  position: relative;
+}
 
-  &__link {
-    display: inline-block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+.navigation__link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: $main-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $main-color;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &__link:hover,
-  &__link:focus {
+  &:hover,
+  &:focus {
     color: $blue-accent;
   }
+}
 
-  &__link--current {
-    color: $blue-accent;
-  }
+.navigation__link--current {
+  color: $blue-accent;
 
-  &__link--current::after {
+  &::after {
     content: '';
 
     position: absolute;
@@ -65,41 +65,41 @@
 .communication {
   display: flex;
   gap: 30px;
+}
 
-  &__contact {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
+.communication__contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 
-    color: $minor-color;
-    display: flex;
-    align-items: center;
+  color: $minor-color;
+  display: flex;
+  align-items: center;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &__contact:hover,
-  &__contact:focus {
+  &:hover,
+  &:focus {
     color: $blue-accent;
   }
 
-  &__icon {
-    display: inline-block;
-    margin-right: 10px;
-
-    fill: $minor-color;
-
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  &__contact:hover &__icon,
-  &__contact:focus &__icon {
+  &:hover .communication__icon,
+  &:focus .communication__icon {
     fill: $blue-accent;
   }
+}
+
+.communication__icon {
+  display: inline-block;
+  margin-right: 10px;
+
+  fill: $minor-color;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
