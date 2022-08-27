@@ -5,6 +5,7 @@
 
 @import './components/logo';
 @import './components/button';
+@import './components/heading';
 @import './components/soc-networks';
 
 @import './layouts/header';
@@ -13,9 +14,14 @@
 @import './layouts/specialization';
 @import './layouts/team';
 @import './layouts/clients';
+
 @import './layouts/portfolio';
+@import './layouts/filter';
 
 @import './layouts/footer';
+@import './layouts/address';
+@import './layouts/join';
+@import './layouts/subscribe';
 
 @import './components/backdrop';
-@import './components/modal';
+@import './layouts/modal';

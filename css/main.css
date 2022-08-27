@@ -101,6 +101,15 @@ img {
   cursor: pointer;
 }
 
+.heading {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
 .soc-networks {
   display: flex;
   justify-content: center;
@@ -279,7 +288,7 @@ img {
   color: inherit;
 }
 
-.features__list {
+.features {
   display: flex;
   justify-content: space-between;
 }
@@ -325,18 +334,6 @@ img {
 
 .specialization__container {
   flex-direction: column;
-}
-
-/* .specialization__heading {
-  margin: 0;
-} */
-.main-heading {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 50px;
 }
 
 .specialization__list {
@@ -462,32 +459,6 @@ img {
   flex-direction: column;
 }
 
-/* __________ Фільтр */
-.filter {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-}
-
-.filter__button {
-  padding: 6px 22px;
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  color: #212121;
-  background-color: #f5f4fa;
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.filter__button:hover,
-.filter__button:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 /* __________ Портфоліо */
 .portfolio {
   margin-top: 50px;
@@ -555,6 +526,31 @@ img {
   letter-spacing: 0.03em;
 }
 
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.filter__button {
+  padding: 6px 22px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background-color: #f5f4fa;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter__button:hover,
+.filter__button:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -606,7 +602,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Приєднуйтесь */
 .join {
   margin-top: 12px;
   margin-left: 70px;
@@ -633,7 +628,6 @@ img {
   fill: #ffffff;
 }
 
-/* ---------- Підпишіться на розсилку ---------- */
 .subscribe {
   margin-left: 93px;
   margin-top: 12px;
