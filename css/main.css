@@ -517,10 +517,12 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer .footer__container {
+
+.footer__container {
   display: flex;
 }
-.footer .footer__logo {
+
+.footer__logo {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -531,10 +533,12 @@ img {
   max-width: 231px;
   width: 100%;
 }
-.address .address__item:not(:last-child) {
+
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.address .address__link {
+
+.address__link {
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
@@ -545,13 +549,15 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address .address__link:focus, .address .address__link:hover {
+.address__link:focus, .address__link:hover {
   color: #2196f3;
 }
-.address .address__location {
+
+.address__location {
   color: #ffffff;
 }
-.address .address__contact {
+
+.address__contact {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -559,7 +565,8 @@ img {
   margin-top: 12px;
   margin-left: 70px;
 }
-.join .join__heading {
+
+.join__heading {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -568,13 +575,18 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
-.join .join__link {
+
+.join__link {
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.join .join__icon {
+.join__link:hover, .join__link:focus {
+  background-color: var(#2196f3);
+}
+
+.join__icon {
   fill: #ffffff;
 }
 
@@ -752,12 +764,15 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  /* Коментар Comment */
 }
 .form:not(:last-child) {
   margin-bottom: 10px;
 }
-.form .form__lable {
+.form:nth-child(4) {
+  margin-bottom: 20px;
+}
+
+.form__lable {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -765,10 +780,12 @@ img {
   letter-spacing: 0.01em;
   color: #757575;
 }
-.form .form__field {
+
+.form__field {
   position: relative;
 }
-.form .form__input {
+
+.form__input {
   padding: 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -777,14 +794,15 @@ img {
   transition-duration: 250ms;
   transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form .form__input:focus {
+.form__input:focus {
   outline: transparent;
   border: 1px solid #2196f3;
 }
-.form .form__input:focus + .form__icon {
+.form__input:focus + .form__icon {
   fill: #2196f3;
 }
-.form .form__icon {
+
+.form__icon {
   position: absolute;
   bottom: 50%;
   left: 12px;
@@ -795,10 +813,9 @@ img {
   transition-duration: 250ms;
   transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form:nth-child(4) {
-  margin-bottom: 20px;
-}
-.form .form__comment {
+
+/* Коментар Comment */
+.form__comment {
   height: 120px;
   padding: 12px 16px;
   resize: none;
@@ -813,10 +830,10 @@ img {
   transition-duration: 250ms;
   transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form .form__comment::placeholder {
+.form__comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-.form .form__comment:focus {
+.form__comment:focus {
   outline: transparent;
   border: 1px solid #2196f3;
 }
@@ -827,18 +844,21 @@ img {
   margin-bottom: 30px;
   user-select: none;
 }
-.checkbox .checkbox__label {
+
+.checkbox__label {
   color: #757575;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.checkbox .checkbox__origin.visually-hidden {
+
+.checkbox__origin.visually-hidden {
   transform: translate(9px, 20px);
   outline: none;
 }
-.checkbox .checkbox__frame {
+
+.checkbox__frame {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -849,19 +869,23 @@ img {
   border: 2px solid #000000;
   background-color: transparent;
 }
-.checkbox .checkbox__origin:checked + .checkbox__frame {
+
+.checkbox__origin:checked + .checkbox__frame {
   border-color: #2196f3;
   background-color: #2196f3;
 }
-.checkbox .checkbox__icon {
+
+.checkbox__icon {
   fill: transparent;
   width: 100%;
   height: 100%;
 }
-.checkbox .checkbox__origin:checked + .checkbox__frame svg {
+
+.checkbox__origin:checked + .checkbox__frame svg {
   fill: #ffffff;
 }
-.checkbox .checkbox__policy {
+
+.checkbox__policy {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
