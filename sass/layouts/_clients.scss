@@ -1,4 +1,4 @@
-.clients__list {
+.clients {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -16,6 +16,16 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: $blue-accent 1px solid;
+  }
+
+  &:hover .clients__logo,
+  &:focus .clients__logo {
+    fill: $blue-accent;
+  }
 }
 
 .clients__logo {
@@ -27,14 +37,4 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients__link:hover,
-.clients__link:focus {
-  border: $blue-accent 1px solid;
-}
-
-.clients__link:hover .clients__logo,
-.clients__link:focus .clients__logo {
-  fill: $blue-accent;
 }

@@ -16,11 +16,16 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.soc-networks__link:hover,
-.soc-networks__link:focus {
-  background-color: $blue-accent;
+  &:hover,
+  &:focus {
+    background-color: $blue-accent;
+  }
+
+  &:hover .soc-networks__icon,
+  &:focus .soc-networks__icon {
+    fill: white;
+  }
 }
 
 .soc-networks__icon {
@@ -32,9 +37,4 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.soc-networks__link:hover .soc-networks__icon,
-.soc-networks__link:focus .soc-networks__icon {
-  fill: white;
 }
